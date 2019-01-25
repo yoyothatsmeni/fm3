@@ -20,13 +20,13 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
-var adminprefix = '2'
+const prefix = "3";
+var adminprefix = '3'
 /////////////////////////
 ////////////////////////
 client.on('ready', () => {
 	console.log('I am ready!'); 
-	client.user.setActivity("2help" , {type:'LISTENING'});
+	client.user.setActivity("3help" , {type:'LISTENING'});
   });
 
 
@@ -306,7 +306,7 @@ client.on('message', message => {
         .addField('queue', 'اظهار قائمة التشغيل')
 	.addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
 	.addField('ping', 'اظهار سرعه (بنج) البوت')
-        .setFooter('Prefix [2]')
+        .setFooter('Prefix [3]')
 	.setColor("#ff0000")
       message.channel.send(helpEmbed);
     }
